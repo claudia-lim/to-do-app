@@ -22,7 +22,6 @@ class MarkAsCompleteController
     public function __invoke(RequestInterface $request, ResponseInterface $response, $args)
     {
         $id = $args['id'];
-        $taskInfo = $this->taskModel->getTaskById($id);
         $this->taskModel->markAsComplete($id);
         return $response->withHeader('Location', '/')->withStatus(301);
     }
