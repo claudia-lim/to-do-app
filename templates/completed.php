@@ -11,7 +11,7 @@
     <h2>Completed Tasks</h2>
     <div id="current-tasks">
         <ul>
-            <?php echo \App\ViewHelpers\completedTasksHelper::displayCompletdTasks($completedTasks);?>
+            <?php echo \App\ViewHelpers\completedTasksHelper::displayCompletedTasks($completedTasks);?>
         </ul>
     </div>
     <a href="/"><h3>Back</h3></a>
