@@ -1,0 +1,25 @@
+:root {
+    --darkolivegreen: #5F6F52;
+    --laurelgreen: #A9B388;
+    --cornsilk: #FEFAE0;
+    --lemonmeringue: #F9EBC7;
+    --camel: #B99470;
+    --alloyorange: #C4661F;
+    --russet: #783D19;
+}
+
+body {
+    background-color: var(--lemonmeringue);
+    color: var(--russet);
+    font-family: Lato;
+}
+
+a {
+    color: var(--darkolivegreen);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--alloyorange);
+    text-decoration: underline;
+}
