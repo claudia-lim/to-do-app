@@ -11,4 +11,6 @@ return function (App $app) {
 
     $app->get('/', \App\Controllers\CurrentTasksController::class);
 
+    $app->get('/completed', \App\Controllers\CompletedTasksController::class);
+
 };

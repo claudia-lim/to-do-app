@@ -8,12 +8,13 @@
 <body>
 <h1>To Do App</h1>
 <div>
-    <h2>Current Tasks</h2>
+    <h2>Completed Tasks</h2>
     <div id="current-tasks">
         <ul>
-            <?php echo \App\ViewHelpers\currentTasksHelper::displayCurrentTasks($currentTasks);?>
+            <?php echo \App\ViewHelpers\completedTasksHelper::displayCompletdTasks($completedTasks);?>
         </ul>
     </div>
+    <a href="/"><h3>Back</h3></a>
 </div>
 </body>
 </html>
