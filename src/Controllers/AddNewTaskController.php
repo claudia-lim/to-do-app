@@ -23,6 +23,6 @@ public function __invoke(RequestInterface $request, ResponseInterface $response,
     $input = $request->getParsedBody();
     $this->taskModel->addNewTask($input['input']);
 
-    return $this->renderer->render($response, 'addNewTask.php', ['input'=>$input]);
+    return $response->withHeader('Location', '/')->withStatus(301);
 }
 }
