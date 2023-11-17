@@ -9,15 +9,12 @@
 <body>
 <h1>To Do App</h1>
 <main>
-<div>
-    <h2>Completed Tasks</h2>
-    <div id="completed-tasks">
-        <ul>
-            <?php echo \App\ViewHelpers\completedTasksHelper::displayCompletedTasks($completedTasks);?>
-        </ul>
+    <div>
+Successfully added task:
+        <br>
+        <?php echo $input['input'] ?>
     </div>
     <a href="/"><h3>Back</h3></a>
-</div>
 </main>
 </body>
 </html>

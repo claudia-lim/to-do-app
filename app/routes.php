@@ -13,4 +13,6 @@ return function (App $app) {
 
     $app->get('/completed', \App\Controllers\CompletedTasksController::class);
 
+    $app->post('/add', \App\Controllers\addNewTaskController::class);
+
 };

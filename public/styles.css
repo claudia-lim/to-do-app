@@ -12,6 +12,20 @@ body {
     background-color: var(--lemonmeringue);
     color: var(--russet);
     font-family: Lato;
+    display: grid;
+}
+
+h1 {
+    margin: 1rem auto;
+}
+
+main {
+    padding: 2rem;
+    justify-self: center;
+    width: 50%;
+    background-color: var(--cornsilk);
+    border-radius: 1rem;
+    border: solid 1px var(--darkolivegreen);
 }
 
 a {

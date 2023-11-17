@@ -30,4 +30,11 @@ class TaskModel
         $query->execute();
         return $query->fetchAll();
     }
+
+    public function addNewTask(string $newTask)
+    {
+        $query = $this->db->prepare("INSERT INTO `tasks`(`task`, `completed`)
+VALUES (?, 0);");
+        $query->execute([$newTask]);
+    }
 }

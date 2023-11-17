@@ -8,6 +8,14 @@
 </head>
 <body>
 <h1>To Do App</h1>
+<main>
+    <div>
+        <h2>Add New Task</h2>
+        <form method="post" action="/add" >
+            <input type="text" name="input">
+            <input type="submit">
+        </form>
+    </div>
 <div>
     <h2>Current Tasks</h2>
     <div id="current-tasks">
@@ -16,6 +24,8 @@
         </ul>
     </div>
     <a href="/completed"><h3>Completed Tasks</h3></a>
+
 </div>
+</main>
 </body>
 </html>
