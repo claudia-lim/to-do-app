@@ -37,4 +37,20 @@ class TaskModel
 VALUES (?, 0);");
         $query->execute([$newTask]);
     }
+
+    public function markAsComplete(int $id) {
+        $query = $this->db->prepare("UPDATE `tasks`
+SET `completed` = 1
+WHERE `id` = ?;");
+        $query->execute([$id]);
+    }
+
+    public function getTaskById(int $id)
+    {
+        $query = $this->db->prepare("SELECT `id`, `task`, `completed`
+FROM `tasks`
+WHERE `id`= ? ");
+        $query->execute([$id]);
+        return $query->fetch();
+    }
 }

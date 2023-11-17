@@ -28,6 +28,35 @@ main {
     border: solid 1px var(--darkolivegreen);
 }
 
+ul {
+list-style: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+input {
+    background-color: var(--laurelgreen);
+    font-family: Lato;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+input[type='submit']{
+    border: solid 2px var(--darkolivegreen);
+}
+
+input[type='submit']:hover {
+    color: var(--alloyorange);
+    border: solid 2px var(--alloyorange);
+}
+
 a {
     color: var(--darkolivegreen);
     text-decoration: none;

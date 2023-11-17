@@ -12,7 +12,7 @@
     <div>
         <h2>Add New Task</h2>
         <form method="post" action="/add" >
-            <input type="text" name="input">
+            <input type="text" name="input" autocomplete="off">
             <input type="submit">
         </form>
     </div>
